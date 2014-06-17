@@ -1,0 +1,139 @@
+
+<style type="text/css">
+
+    body{
+      font-family:"Avenir Next";
+    }
+    .container {
+        width: 300px;
+        margin: 30px 5px 0px 5px;
+        float: left;
+    }
+    .container input {
+        width: 100%;
+        height: 25px;
+        margin: 5px 0px 10px 0px;
+        clear: both;
+        font-size: 16px;
+        padding: 3px;
+
+    }
+
+    .container select {
+      width: 100%;
+      clear: both;
+      margin: 5px 0px 10px 0px;
+    }
+
+    </style>
+    <body>
+<div class="container">
+<form action="/server" method="POST">
+  <fieldset>
+    <legend>Server</legend>
+    <label>Host</label>
+    <input type="text" name="host" value="140.114.77.19"><br />
+    <label>User</label>
+    <input type="text" name="user"><br />
+    <label>Password</label>
+    <input type="password" name="passwd"><br />
+    <label>Database</label>
+    <input type="text" name="db"><br />
+    <input type="submit" id="server">
+  </fieldset>
+</form>
+</div>
+<div class="container">
+<form action="/license" method="POST">
+  <fieldset>
+    <legend>Driver License</legend>
+    <label>Person ID</label>
+    <input type="text" name="owner_id"><br />
+    <label>License Type</label>
+    <select name="type">
+      <option value="MOTORCYCLE">Motorcycle</option>
+      <option value="CAR">Car</option>
+      <option value="TRUCK">Truck</option>
+    </select>
+    <br />
+    <label>Middle School Data Type</label>
+    <select name="mid_type">
+      <option value="Numeric">Numeric</option>
+      <option value="String">String</option>
+    </select>
+    <br />
+    <label>Middle School Value</label>
+    <input type="text" name="deg"><br />
+    <input type="submit" id="license">
+  </fieldset>
+</form>
+</div>
+
+<div class="container">
+<form action="/incident" method="POST">
+  <fieldset>
+    <legend>Incident</legend>
+    <label>Person ID</label>
+    <input type="text" name="owner_id"><br />
+    <label>Incident Type</label>
+    <select name="type">
+      <option value="STOLEN/ROBBED">Stolen/Robbed</option>
+      <option value="ATTACKED">Attacked</option>
+      <option value="KILLED">Killed</option>
+    </select>
+    <br />
+    <label>Time</label>
+    <input type="text" name="time"><br />
+    <label>Place</label>
+    <input type="text" name="place"><br />
+    <label>Property ID</label>
+    <input type="text" name="property_id"><br />
+    <label>Property Type</label>
+    <select name="p_type">
+      <option value="Car">Car</option>
+      <option value="Motorcycle">Motorcycle<option>
+      <option value="House/Apartment">House/Apartment</option>
+    </select>
+    <br />
+    <label>Time Purchased</label>
+    <input type="text" name="purchase_time"><br />
+    <label>Perpetrator ID</label>
+    <input type="text" name="perpetrator_id"><br />
+    <label>Address</label>
+    <input type type="text" name="address"><br />
+    <input type="submit" id="incident">
+  </fieldset>
+</form>
+</div>
+<div class="container">
+  <form action="/criminal" method="POST">
+  <fieldset>
+    <legend>Criminal Record</legend>
+    <label>Person ID</label>
+    <input type="text" name="person_id"><br />
+    <label>Type</label>
+    <select name="type">
+      <option value="MURDER">Murder</option>
+      <option value="ROBBERY">Robbery</option>
+      <option value="THEFT">Theft</option>
+    </select>
+    <label>Date</label>
+    <input type="text" name="date"><br />
+    <label>Legal Outcome</label>
+    <select name="outcome">
+      <option value="1">Guilty</option>
+      <option value="0">Innocent</option>
+    </select><br>
+    <label>Legal Status<label>
+      <select name="status">
+        <option value="IN JAIL">In Jail</option>
+        <option value="PAID FINE">Paid Fine</option>
+        <option value="FINISHED JAIL TIME">Finished Jail Time</option>
+      </select><br />
+    <label>Closing Date</label>
+    <input type="text" name="closing_date"><br>
+    <input type="submit" id="criminal">
+  </fieldset>
+  </from>
+</div>
+</body>
